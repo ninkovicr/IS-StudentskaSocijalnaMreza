@@ -1,0 +1,40 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[serbian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[german=quotes]{csquotes}
+\DeclareQuoteAlias{ngerman}{serbian}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[font=small,labelfont=bf]{caption}
+\MakeOuterQuote{"}
+
+\begin{document}
+
+\input{sekcije/0.naslovna.tex}
+
+\renewcommand*\contentsname{Sadržaj:}
+\tableofcontents
+\newpage
+
+\input{sekcije/1.uvod.tex}
+\input{sekcije/2.analiza.tex}
+\input{sekcije/3.slucajevi_upotrebe.tex}
+\input{sekcije/4.baza_podataka.tex}
+\input{sekcije/5.arhitektura.tex}
+\input{sekcije/6.zakljucak.tex}
+\input{sekcije/7.literatura.tex}
+\end{document}
